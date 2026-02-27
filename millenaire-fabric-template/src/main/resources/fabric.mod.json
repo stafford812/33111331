@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "millenaire",
+  "version": "${version}",
+  "name": "Millénaire",
+  "description": "Millénaire Reborn - Деревни NPC с уникальными культурами, торговлей и строительством",
+  "authors": [
+    "Kinniken (оригинальный автор)",
+    "Millenaire Reborn Team"
+  ],
+  "contact": {
+    "homepage": "https://millenaire.org",
+    "sources": "https://github.com/millenaire-reborn/millenaire"
+  },
+  "license": "CC-BY-NC-SA-4.0",
+  "icon": "assets/millenaire/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.millenaire.Millenaire"
+    ],
+    "client": [
+      "org.millenaire.client.MillenaireClient"
+    ],
+    "modmenu": [
+      "org.millenaire.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "millenaire.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "cloth-config": "*",
+    "modmenu": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/millenaire"
+      }
+    }
+  }
+}
